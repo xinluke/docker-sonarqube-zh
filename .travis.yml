@@ -4,4 +4,6 @@ services:
   - docker
 
 #运行的脚本命令
-script: docker build -t wangym/sonarqube:7.8-zh .
+script: 
+  - docker pull xinluke110/docker-sonarqube-zh
+  - docker build -t wangym/sonarqube:7.8-zh .
