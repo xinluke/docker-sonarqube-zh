@@ -6,7 +6,7 @@ ENV SONAR_VERSION=7.8 \
 # Http port
 EXPOSE 9000
 RUN apt-get update \
-    && apt-get install -y curl unzip \
+    && apt-get install -y procps curl unzip \
     && rm -rf /var/lib/apt/lists/* \
     && groupadd -r sonarqube && useradd -r -g sonarqube sonarqube \
     && set -x \
