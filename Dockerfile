@@ -25,4 +25,4 @@ WORKDIR $SONARQUBE_HOME
 
 USER sonarqube
 
-ENTRYPOINT ["/opt/sonarqube/bin/linux-x86-64/sonar.sh","start"]
+ENTRYPOINT ["/opt/sonarqube/bin/linux-x86-64/sonar.sh","console"]
